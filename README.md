@@ -1,4 +1,5 @@
-# RWD Prototype `Version 1.0`
+# RWD Prototype
+`Version 1.0`
 
 > A prototype for mobile mockups showcase.
 
