@@ -10,68 +10,67 @@ body, input, textarea, select, button {
 
 /* line 13, ../sass/_main.scss */
 .content {
-  /* Let's get this party started */
   /* Track Chrome */
   /* Track Firefox */
   /* Handle Chrome */
   /* Handle Firefox */
 }
-/* line 15, ../sass/_main.scss */
+/* line 14, ../sass/_main.scss */
 .content::-webkit-scrollbar {
   width: 4px;
 }
-/* line 19, ../sass/_main.scss */
+/* line 18, ../sass/_main.scss */
 .content::-moz-scrollbar {
   width: 4px;
 }
-/* line 23, ../sass/_main.scss */
+/* line 22, ../sass/_main.scss */
 .content::-webkit-scrollbar-track {
   -webkit-border-radius: 999em;
   border-radius: 999em;
   background: #212a2f;
   opacity: 0;
 }
-/* line 30, ../sass/_main.scss */
+/* line 29, ../sass/_main.scss */
 .content::-moz-scrollbar-track {
   -moz-border-radius: 999em;
   border-radius: 999em;
   background: #212a2f;
   opacity: 0;
 }
-/* line 37, ../sass/_main.scss */
+/* line 36, ../sass/_main.scss */
 .content::-webkit-scrollbar-thumb {
   -webkit-border-radius: 999em;
   border-radius: 999em;
   background: #212a2f;
   background: #acb1b4;
 }
-/* line 44, ../sass/_main.scss */
+/* line 43, ../sass/_main.scss */
 .content::-moz-scrollbar-thumb {
   -moz-border-radius: 999em;
   border-radius: 999em;
   background: #212a2f;
   background: #acb1b4;
 }
-/* line 50, ../sass/_main.scss */
+/* line 49, ../sass/_main.scss */
 .content::-webkit-scrollbar-thumb:window-inactive {
   background: rgba(0, 0, 0, 0.4);
   opacity: 0;
 }
-/* line 54, ../sass/_main.scss */
+/* line 53, ../sass/_main.scss */
 .content::-webkit-scrollbar-button:horizontal:decrement:hover {
   border: 1px solid #acb1b4;
 }
-/* line 57, ../sass/_main.scss */
+/* line 56, ../sass/_main.scss */
 .content::-moz-scrollbar-thumb:window-inactive {
   background: rgba(0, 0, 0, 0.4);
   opacity: 0;
 }
-/* line 61, ../sass/_main.scss */
+/* line 60, ../sass/_main.scss */
 .content::-moz-scrollbar-button:horizontal:decrement:hover {
   border: 1px solid #acb1b4;
 }
 
-/* line 67, ../sass/_main.scss */
+/* line 66, ../sass/_main.scss */
 body {
   color: black;
   font-style: normal;
@@ -98,7 +97,7 @@ body {
   background-repeat: no-repeat;
 }
 
-/* line 86, ../sass/_main.scss */
+/* line 85, ../sass/_main.scss */
 a {
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -202,24 +201,29 @@ a {
   margin-top: -13px;
 }
 
-/* line 165, ../sass/_main.scss */
+/* line 164, ../sass/_main.scss */
+.project-description {
+  font-size: 0.9em;
+}
+
+/* line 167, ../sass/_main.scss */
 .left-side {
   position: relative;
 }
 
-/* line 169, ../sass/_main.scss */
+/* line 171, ../sass/_main.scss */
 .right-side {
   position: relative;
 }
 
-/* line 174, ../sass/_main.scss */
+/* line 175, ../sass/_main.scss */
 .mobile-container {
   width: 100%;
   float: right;
   position: relative;
   min-height: 710px;
 }
-/* line 179, ../sass/_main.scss */
+/* line 180, ../sass/_main.scss */
 .mobile-container .content {
   position: absolute;
   top: 1px;
@@ -231,7 +235,7 @@ a {
   overflow: hidden;
   overflow-y: auto;
 }
-/* line 190, ../sass/_main.scss */
+/* line 191, ../sass/_main.scss */
 .mobile-container .RWDProto-tabs {
   position: relative;
   width: 100%;
@@ -240,14 +244,14 @@ a {
   margin: 8em 0;
   clear: both;
 }
-/* line 197, ../sass/_main.scss */
+/* line 198, ../sass/_main.scss */
 .mobile-container .RWDProto-tabs .tab {
   width: 50%;
   background: red;
   display: block;
   padding-left: 73px;
 }
-/* line 202, ../sass/_main.scss */
+/* line 203, ../sass/_main.scss */
 .mobile-container .RWDProto-tabs .tab label, .mobile-container .RWDProto-tabs .tab a {
   background: #fdfdfd;
   padding: 12px 20px 0;
@@ -270,7 +274,7 @@ a {
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-/* line 214, ../sass/_main.scss */
+/* line 215, ../sass/_main.scss */
 .mobile-container .RWDProto-tabs .tab label:before, .mobile-container .RWDProto-tabs .tab a:before {
   content: '';
   width: 4px;
@@ -281,52 +285,52 @@ a {
   left: 0;
   z-index: 1;
 }
-/* line 224, ../sass/_main.scss */
+/* line 225, ../sass/_main.scss */
 .mobile-container .RWDProto-tabs .tab label:hover, .mobile-container .RWDProto-tabs .tab a:hover {
   cursor: pointer;
   background: #acb1b4;
   color: white;
 }
-/* line 230, ../sass/_main.scss */
+/* line 231, ../sass/_main.scss */
 .mobile-container .RWDProto-tabs .tab a {
   color: #acb1b4;
 }
-/* line 233, ../sass/_main.scss */
+/* line 234, ../sass/_main.scss */
 .mobile-container .RWDProto-tabs .tab a:hover {
   text-decoration: none;
   background: #acb1b4;
   color: white;
 }
-/* line 238, ../sass/_main.scss */
+/* line 239, ../sass/_main.scss */
 .mobile-container .RWDProto-tabs .tab a:focus {
   background: white;
   color: white;
   background-color: black;
 }
-/* line 242, ../sass/_main.scss */
+/* line 243, ../sass/_main.scss */
 .mobile-container .RWDProto-tabs .tab a:focus:before {
   background-color: black;
 }
-/* line 247, ../sass/_main.scss */
+/* line 248, ../sass/_main.scss */
 .mobile-container .RWDProto-tabs .tab [type=radio] {
   display: none;
 }
-/* line 250, ../sass/_main.scss */
+/* line 251, ../sass/_main.scss */
 .mobile-container .RWDProto-tabs .tab [type=radio]:checked ~ label, .mobile-container .RWDProto-tabs .tab [type=radio]:checked ~ a {
   background: white;
   color: black;
   z-index: 2;
 }
-/* line 254, ../sass/_main.scss */
+/* line 255, ../sass/_main.scss */
 .mobile-container .RWDProto-tabs .tab [type=radio]:checked ~ label:before, .mobile-container .RWDProto-tabs .tab [type=radio]:checked ~ a:before {
   background-color: black;
 }
-/* line 258, ../sass/_main.scss */
+/* line 259, ../sass/_main.scss */
 .mobile-container .RWDProto-tabs .tab [type=radio]:checked ~ label ~ .content, .mobile-container .RWDProto-tabs .tab [type=radio]:checked ~ a ~ .content {
   z-index: 4;
 }
 
-/* line 264, ../sass/_main.scss */
+/* line 265, ../sass/_main.scss */
 .download {
   position: absolute;
   bottom: 3px;
@@ -343,7 +347,7 @@ a {
   transition-property: right;
   right: 259px;
 }
-/* line 279, ../sass/_main.scss */
+/* line 280, ../sass/_main.scss */
 .download:hover {
   background: black;
   text-decoration: none;
@@ -351,34 +355,34 @@ a {
   right: 377px;
 }
 
-/* line 286, ../sass/_main.scss */
+/* line 287, ../sass/_main.scss */
 footer {
   margin-bottom: 4em;
   margin-top: -13px;
 }
 
-/* line 290, ../sass/_main.scss */
+/* line 291, ../sass/_main.scss */
 .credits {
   font-size: .85em;
   color: #acb1b4;
   font-weight: 400;
 }
-/* line 294, ../sass/_main.scss */
+/* line 295, ../sass/_main.scss */
 .credits a {
   color: black;
 }
 
-/* line 300, ../sass/_main.scss */
+/* line 301, ../sass/_main.scss */
 .ink-modal {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
 }
-/* line 302, ../sass/_main.scss */
+/* line 303, ../sass/_main.scss */
 .ink-modal .desktop-header {
   padding-top: 0.6em;
 }
-/* line 306, ../sass/_main.scss */
+/* line 307, ../sass/_main.scss */
 .ink-modal .modal-header {
   padding: .4em 1em .2em;
   -moz-box-shadow: none;
@@ -388,17 +392,17 @@ footer {
   background-color: #fdfdfd;
   position: relative;
 }
-/* line 313, ../sass/_main.scss */
+/* line 314, ../sass/_main.scss */
 .ink-modal .modal-body {
   padding: 0;
   margin: 0 auto;
 }
-/* line 316, ../sass/_main.scss */
+/* line 317, ../sass/_main.scss */
 .ink-modal .modal-body img {
   border-left: 1px solid #e2e2e2;
   border-right: 1px solid #e2e2e2;
 }
-/* line 321, ../sass/_main.scss */
+/* line 322, ../sass/_main.scss */
 .ink-modal .btn-close {
   text-indent: -99999em;
   width: 21px;
@@ -408,7 +412,7 @@ footer {
   right: 1.5em;
   background-position: -460px -1px;
 }
-/* line 329, ../sass/_main.scss */
+/* line 330, ../sass/_main.scss */
 .ink-modal .btn-close:hover {
   background-position: -460px -23px;
 }

@@ -11,7 +11,6 @@ body, input, textarea, select, button {
 	-moz-font-feature-settings: "liga", "kern";
 }
 .content{
-	/* Let's get this party started */
 	&::-webkit-scrollbar {
 	    width: 4px;
 	}
@@ -89,6 +88,7 @@ a{
 	@include transition-timing-function(ease-in-out);
 	text-decoration: none;
 }
+
 .ink-grid {
   max-width: 1200px;
 }
@@ -161,7 +161,9 @@ a{
 	color: black;
 	margin-top: -13px;
 }
-
+.project-description{
+	font-size: 0.9em;
+}
 .left-side{
 	position: relative;
 }
@@ -169,7 +171,6 @@ a{
 .right-side{
 	position: relative;
 }
-
 
 .mobile-container{
 	width: 100%;
