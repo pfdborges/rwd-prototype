@@ -124,32 +124,9 @@ a {
   min-height: 710px;
 }
 
-/* line 98, ../sass/_main.scss */
-.sprite {
-  background: transparent url(../imgs/sprite-WRDPrototype.png) no-repeat 0 0;
-  float: left;
-  position: relative;
-}
-/* line 102, ../sass/_main.scss */
-.sprite.mobile-phone {
-  width: 26px;
-  height: 41px;
-  margin-right: 15px;
-  top: -1px;
-  background-position: -386px -1px;
-}
-/* line 109, ../sass/_main.scss */
-.sprite.brand-logo {
-  width: 532px;
-  height: 533px;
-  position: absolute;
-  top: 172px;
-  right: -419px;
-  background-position: -386px -221px;
-  z-index: -1;
-}
-/* line 118, ../sass/_main.scss */
-.sprite.mobile-mask {
+/* line 99, ../sass/_main.scss */
+.mobile-mask {
+  background: transparent url(../imgs/sprite-device.png) no-repeat 0 0;
   width: 382px;
   height: 801px;
   float: right;
@@ -158,26 +135,54 @@ a {
   right: 0;
   z-index: 3;
 }
-/* line 127, ../sass/_main.scss */
+
+/* line 109, ../sass/_main.scss */
+.sprite {
+  float: left;
+  position: relative;
+}
+/* line 112, ../sass/_main.scss */
+.sprite.mobile-phone {
+  background: transparent url(../svg/icon-phone.svg) no-repeat 0 0;
+  background-size: 100%;
+  width: 26px;
+  height: 41px;
+  margin-right: 15px;
+  top: -1px;
+}
+/* line 120, ../sass/_main.scss */
+.sprite.brand-logo {
+  background: transparent url(../svg/brand-logo.svg) no-repeat 0 0;
+  background-size: 100%;
+  width: 532px;
+  height: 533px;
+  position: absolute;
+  top: 172px;
+  right: -419px;
+  z-index: -1;
+}
+/* line 130, ../sass/_main.scss */
 .sprite.icon-download {
+  background: transparent url(../svg/icon-download.svg) no-repeat 0 0;
+  background-size: 100%;
   width: 33px;
   height: 33px;
   float: left;
-  background-position: -419px -1px;
   top: -5px;
   left: -6px;
   margin-right: 7px;
 }
-/* line 136, ../sass/_main.scss */
+/* line 140, ../sass/_main.scss */
 .sprite.icon-desktop {
+  background: transparent url(../svg/icon-desktop.svg) no-repeat 0 0;
+  background-size: 100%;
   width: 40px;
   height: 37px;
   margin-right: 15px;
   top: -1px;
-  background-position: -489px -1px;
 }
 
-/* line 145, ../sass/_main.scss */
+/* line 150, ../sass/_main.scss */
 .rwd-header, .ink-modal .desktop-header {
   padding-top: 2.1em;
   text-transform: uppercase;
@@ -185,7 +190,7 @@ a {
   font-weight: 400;
   letter-spacing: 0.01em;
 }
-/* line 151, ../sass/_main.scss */
+/* line 156, ../sass/_main.scss */
 .rwd-header .version, .ink-modal .desktop-header .version {
   display: block;
   font-size: .6em;
@@ -194,39 +199,44 @@ a {
   position: relative;
 }
 
-/* line 159, ../sass/_main.scss */
+/* line 164, ../sass/_main.scss */
 .project-name {
   font-size: 3em;
   color: black;
   margin-top: -13px;
 }
 
-/* line 164, ../sass/_main.scss */
+/* line 169, ../sass/_main.scss */
 .project-description {
   font-size: 0.9em;
 }
 
-/* line 167, ../sass/_main.scss */
+/* line 172, ../sass/_main.scss */
 .left-side {
   position: relative;
 }
 
-/* line 171, ../sass/_main.scss */
+/* line 176, ../sass/_main.scss */
 .right-side {
   position: relative;
 }
 
-/* line 175, ../sass/_main.scss */
-.mobile-container {
+/* line 180, ../sass/_main.scss */
+.ink-mobile-container {
   width: 100%;
   float: right;
   position: relative;
   min-height: 710px;
 }
-/* line 180, ../sass/_main.scss */
-.mobile-container .content {
+/* line 185, ../sass/_main.scss */
+.ink-mobile-container .ink-tabs {
+  position: relative;
+  margin-top: 112px;
+}
+/* line 188, ../sass/_main.scss */
+.ink-mobile-container .ink-tabs .tabs-content {
   position: absolute;
-  top: 1px;
+  top: -25px;
   right: 29px;
   padding: 0;
   background-color: black;
@@ -234,9 +244,10 @@ a {
   height: 568px;
   overflow: hidden;
   overflow-y: auto;
+  z-index: 5;
 }
-/* line 191, ../sass/_main.scss */
-.mobile-container .RWDProto-tabs {
+/* line 201, ../sass/_main.scss */
+.ink-mobile-container .tabs-nav {
   position: relative;
   width: 100%;
   padding-left: 1.5em;
@@ -244,15 +255,31 @@ a {
   margin: 8em 0;
   clear: both;
 }
-/* line 198, ../sass/_main.scss */
-.mobile-container .RWDProto-tabs .tab {
+/* line 208, ../sass/_main.scss */
+.ink-mobile-container .tabs-nav li {
   width: 50%;
   background: red;
   display: block;
   padding-left: 73px;
 }
-/* line 203, ../sass/_main.scss */
-.mobile-container .RWDProto-tabs .tab label, .mobile-container .RWDProto-tabs .tab a {
+/* line 214, ../sass/_main.scss */
+.ink-mobile-container .tabs-nav li.active a {
+  background: white;
+  color: black;
+  z-index: 2;
+  border: 0;
+}
+/* line 219, ../sass/_main.scss */
+.ink-mobile-container .tabs-nav li.active a:before {
+  background-color: black;
+}
+/* line 222, ../sass/_main.scss */
+.ink-mobile-container .tabs-nav li.active a:hover {
+  background: white;
+  color: black;
+}
+/* line 228, ../sass/_main.scss */
+.ink-mobile-container .tabs-nav li a {
   background: #fdfdfd;
   padding: 12px 20px 0;
   position: relative;
@@ -261,6 +288,7 @@ a {
   height: 48px;
   margin-bottom: 4px;
   color: #acb1b4;
+  border: 0;
   -moz-transition-property: all;
   -o-transition-property: all;
   -webkit-transition-property: all;
@@ -274,8 +302,8 @@ a {
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-/* line 215, ../sass/_main.scss */
-.mobile-container .RWDProto-tabs .tab label:before, .mobile-container .RWDProto-tabs .tab a:before {
+/* line 241, ../sass/_main.scss */
+.ink-mobile-container .tabs-nav li a:before {
   content: '';
   width: 4px;
   height: 48px;
@@ -285,52 +313,24 @@ a {
   left: 0;
   z-index: 1;
 }
-/* line 225, ../sass/_main.scss */
-.mobile-container .RWDProto-tabs .tab label:hover, .mobile-container .RWDProto-tabs .tab a:hover {
-  cursor: pointer;
-  background: #acb1b4;
-  color: white;
-}
-/* line 231, ../sass/_main.scss */
-.mobile-container .RWDProto-tabs .tab a {
-  color: #acb1b4;
-}
-/* line 234, ../sass/_main.scss */
-.mobile-container .RWDProto-tabs .tab a:hover {
-  text-decoration: none;
-  background: #acb1b4;
-  color: white;
-}
-/* line 239, ../sass/_main.scss */
-.mobile-container .RWDProto-tabs .tab a:focus {
-  background: white;
-  color: white;
-  background-color: black;
-}
-/* line 243, ../sass/_main.scss */
-.mobile-container .RWDProto-tabs .tab a:focus:before {
-  background-color: black;
-}
-/* line 248, ../sass/_main.scss */
-.mobile-container .RWDProto-tabs .tab [type=radio] {
-  display: none;
-}
 /* line 251, ../sass/_main.scss */
-.mobile-container .RWDProto-tabs .tab [type=radio]:checked ~ label, .mobile-container .RWDProto-tabs .tab [type=radio]:checked ~ a {
-  background: white;
-  color: black;
-  z-index: 2;
+.ink-mobile-container .tabs-nav li a:hover {
+  background: #acb1b4;
+  color: white;
+  text-decoration: none;
 }
-/* line 255, ../sass/_main.scss */
-.mobile-container .RWDProto-tabs .tab [type=radio]:checked ~ label:before, .mobile-container .RWDProto-tabs .tab [type=radio]:checked ~ a:before {
+/* line 256, ../sass/_main.scss */
+.ink-mobile-container .tabs-nav li a:focus {
+  background: white;
+  color: white;
   background-color: black;
 }
-/* line 259, ../sass/_main.scss */
-.mobile-container .RWDProto-tabs .tab [type=radio]:checked ~ label ~ .content, .mobile-container .RWDProto-tabs .tab [type=radio]:checked ~ a ~ .content {
-  z-index: 4;
+/* line 260, ../sass/_main.scss */
+.ink-mobile-container .tabs-nav li a:focus:before {
+  background-color: black;
 }
 
-/* line 265, ../sass/_main.scss */
+/* line 269, ../sass/_main.scss */
 .download {
   position: absolute;
   bottom: 3px;
@@ -347,7 +347,7 @@ a {
   transition-property: right;
   right: 259px;
 }
-/* line 280, ../sass/_main.scss */
+/* line 282, ../sass/_main.scss */
 .download:hover {
   background: black;
   text-decoration: none;
@@ -355,34 +355,34 @@ a {
   right: 377px;
 }
 
-/* line 287, ../sass/_main.scss */
+/* line 289, ../sass/_main.scss */
 footer {
   margin-bottom: 4em;
   margin-top: -13px;
 }
 
-/* line 291, ../sass/_main.scss */
+/* line 293, ../sass/_main.scss */
 .credits {
   font-size: .85em;
   color: #acb1b4;
   font-weight: 400;
 }
-/* line 295, ../sass/_main.scss */
+/* line 297, ../sass/_main.scss */
 .credits a {
   color: black;
 }
 
-/* line 301, ../sass/_main.scss */
+/* line 303, ../sass/_main.scss */
 .ink-modal {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
 }
-/* line 303, ../sass/_main.scss */
+/* line 305, ../sass/_main.scss */
 .ink-modal .desktop-header {
   padding-top: 0.6em;
 }
-/* line 307, ../sass/_main.scss */
+/* line 309, ../sass/_main.scss */
 .ink-modal .modal-header {
   padding: .4em 1em .2em;
   -moz-box-shadow: none;
@@ -392,17 +392,17 @@ footer {
   background-color: #fdfdfd;
   position: relative;
 }
-/* line 314, ../sass/_main.scss */
+/* line 316, ../sass/_main.scss */
 .ink-modal .modal-body {
   padding: 0;
   margin: 0 auto;
 }
-/* line 317, ../sass/_main.scss */
+/* line 319, ../sass/_main.scss */
 .ink-modal .modal-body img {
   border-left: 1px solid #e2e2e2;
   border-right: 1px solid #e2e2e2;
 }
-/* line 322, ../sass/_main.scss */
+/* line 324, ../sass/_main.scss */
 .ink-modal .btn-close {
   text-indent: -99999em;
   width: 21px;
@@ -410,11 +410,12 @@ footer {
   position: absolute;
   top: 1.5em;
   right: 1.5em;
-  background-position: -460px -1px;
+  background: transparent url(../svg/icon-close.svg) no-repeat 0 0;
+  background-size: 100%;
 }
-/* line 330, ../sass/_main.scss */
+/* line 333, ../sass/_main.scss */
 .ink-modal .btn-close:hover {
-  background-position: -460px -23px;
+  background: transparent url(../svg/icon-close-hover.svg) no-repeat 0 0;
 }
 
 /* line 19, ../sass/_animations.scss */

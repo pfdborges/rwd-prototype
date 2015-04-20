@@ -28,7 +28,7 @@
         <link rel="stylesheet" type="text/css" href="http://cdn.ink.sapo.pt/3.1.7/css/font-awesome.min.css">
 
         <!-- RWD Prototype main styles -->
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
 
         <!-- load Ink's css for IE8 -->
         <!--[if lt IE 9 ]>
@@ -90,37 +90,29 @@
                     </p>
                 </div>
                 <div class="all-65 push-right right-side">
-                    <div class="sprite mobile-mask"></div>
-                    <div class="mobile-container">
-                        <div class="RWDProto-tabs">
-                               <div class="tab">
-                                   <input type="radio" id="tab-1" name="tab-group-1" checked>
-                                   <label for="tab-1">Internal page</label>
-                                   
-                                   <div class="content active">
-                                       <img src="assets/imgs/iphone_screen_main.jpg" alt="Mobile Screenshot of a internal page">
-                                   </div> 
-                               </div>
-                               <div class="tab">
-                                   <input type="radio" id="tab-2" name="tab-group-1">
-                                   <label for="tab-2">Menu mobile</label>
-                                   
-                                   <div class="content hidden">
-                                       <img src="assets/imgs/iphone_screen_menu.jpg" alt="Mobile Screenshot of the menu">
-                                   </div> 
-                               </div>
-                                
-                                <div class="tab">
-                                   <a id="RWDProtoModal" href="#">Desktop version</a>
-                               </div>
-                                
+                    <div class="mobile-mask"></div>
+
+                    <div class="ink-mobile-container">
+                        <div id="protoTabs" class="ink-tabs">
+                            <ul class="tabs-nav">
+                                <li><a class="tabs-tab" href="#internalPage">Internal page</a></li>
+                                <li><a class="tabs-tab" href="#menuMobile">Menu mobile</a></li>
+                                <li><a id="RWDProtoModal" href="#">Desktop version</a></li>
+                            </ul>
+
+                            <!-- Now just place your content -->
+                            <div id="internalPage" class="tabs-content">
+                                <img src="assets/imgs/iphone_screen_main.jpg" alt="Mobile Screenshot of a internal page">
+                            </div>
+                            <div id="menuMobile" class="tabs-content">
+                                <img src="assets/imgs/iphone_screen_menu.jpg" alt="Mobile Screenshot of the menu">
                             </div>
                         </div>
-                        <a class="download" href="http://pfdborges.github.io/rwd-prototype/assets/imgs/RWD-prototype.zip">
+                        <a class="download" href="http://pfdborges.github.io/rwd-prototype/assets/imgs/RWD-Prototype.zip">
                             <span class="sprite icon-download"></span>
                             Download
                         </a>
-                    </div> <!-- END .mobile-container -->
+                    </div>
                 </div>  <!-- END .right-side -->
             
                 <footer class="clearfix">

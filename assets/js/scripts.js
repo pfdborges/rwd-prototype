@@ -6,6 +6,11 @@ jQuery(document).ready(function($){
         var modalObj = new Modal( modalElement );
     });
 
+    // Tabs
+    Ink.requireModules( ['Ink.Dom.Selector_1','Ink.UI.Tabs_1'], function( Selector, Tabs ){
+        var tabsObj = new Tabs('#protoTabs');
+    });
+
 	// Animations
 	$(".rwd-header").addClass("animated fadeInDown");
 	$(".project-name").addClass("animated fadeInDown delay");
